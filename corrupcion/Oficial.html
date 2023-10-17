@@ -1,0 +1,21 @@
+{{ block title }}
+    Oficial
+{{ endblock }}
+
+{{ block content }}
+
+<p> El ciudadano te está ofreciendo un pago de 3 monedas experimentales <span style="color: green;"><b>$</b></span>. Ultimamente estás un poco corto de dinero y se acerca el cumpleaños de tu hija.
+
+<ul>
+<li><p> Si no aceptas, las 3 monedas regresan al ciudadano 1 </p></li>
+<li><p> Si aceptas, recibes 9 monedas además de las 3 monedas extra que te ofreció el ciudadano 1; sin embargo, harías que le resten  18 monedas al ciudadano 2. </p></li>
+ <li><p> Recuerda que existe un monitor que podrá o no castigarte con el monto que este elija.</p></li>
+</ul>
+
+<p> ¿Qué decides?&#x1F914
+
+    {{ form.Aceptar_Soborno }}
+    {{ next_button }}
+{{ endblock }}
+
+

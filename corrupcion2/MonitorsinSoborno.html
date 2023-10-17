@@ -1,0 +1,60 @@
+{{ block title }}
+    Monitor
+{{ endblock }}
+{{ block content }}
+
+<p> El ciudadano 1 intentó sobornar sin éxito al oficial con un monto de 3 monedas experimentales para obtener beneficios personales&#x26A0. Esto pudo provocar que el ciudadano 2 pierda <span style="color: red;">36 monedas</span>.
+
+ <ul>
+<li><p> Tienes la opción de castigar o no al ciudadano 1. </p></li>
+    <li><p> Recuerda que el monto usado para castigar se resta de tu dotación inicial.</p></li>
+    <li><p> La cantidad de castigo que elijas para castigar al ciudadano 1 se multiplicará por 2, y la retribución del ciudadano 1 se reducirá en esta cantidad duplicada. </p></li>
+ </ul>
+<p> </p>
+    <span style="color: red;"><b>Advertencia: En esta ronda el daño que se intentó causar al ciudadano 2 era del doble a las 5 rondas anteriores.</span></b>
+<p> </p>
+
+<p>Qué decides?&#x1F914
+    <br>
+    <br>
+    <script>
+             //var form = $(".form");
+             //let selectElement = document.getElementById('monto_ciudadano_sinSoborno');
+
+             //let extraerValorButton = document.getElementById('extraerValor');
+             //extraerValorButton.addEventListener('click', function() {
+                 //$(form[0]).val(selectElement.value)
+             })
+
+    </script>
+
+    <form name="formulario">
+        <input id="Castigar ciudadano" type="radio" name="Castigo" value="1">
+        <label for="Castigar ciudadano">
+            Castigar soborno del ciudadano con
+            <select class="form" name="monto_ciudadano_sinSoborno" id="monto_ciudadano_sinSoborno">
+                <option value="0">0</option> <!-- Agregué una opción vacía -->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select> monedas experimentales
+        </label>
+        <br>
+
+        <input id="No castigar ciudadano" type="radio" name="Castigo" value="2">
+        <label for="Castigar ciudadano">
+
+            No castigar soborno
+
+        </label>
+        <br><br>
+        <button class="btn btn-primary" id="extraerValor">Siguiente</button>
+
+        {{ endblock }}

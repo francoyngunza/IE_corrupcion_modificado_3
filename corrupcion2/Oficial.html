@@ -1,0 +1,25 @@
+{{ block title }}
+    Oficial
+{{ endblock }}
+
+{{ block content }}
+<p> El ciudadano te está ofreciendo un pago de 3 monedas experimentales <span style="color: green;"><b>$</b></span>. Ultimamente estás un poco corto de dinero y se acerca el cumpleaños de tu hija.
+
+<ul>
+<li><p> Si no aceptas, las 3 monedas regresan al ciudadano 1 </p></li>
+<li><p> Si aceptas, recibes <span style="color: red;"><b>18 monedas</b></span> además de las <span style="color: red;"><b>3 monedas</b></span>  que te ofreció el ciudadano 1; sin embargo, harías que le resten <span style="color: red;"><b>36 monedas</b></span>  al ciudadano 2. </p></li>
+ <li><p> Recuerda que existe un monitor que podrá o no castigarte con el monto que este elija.</p></li>
+</ul>
+
+  <span style="color: red;"><b>Advertencia: En esta ronda el daño que le causas al ciudadano 2 es el doble con respecto a las primeras 5 rondas, pero también tus ganancias pueden duplicarse.</span></b>
+<p></p>
+
+<p> ¿Qué decides?&#x1F914
+
+    {{ form.Aceptar_Soborno }}
+    <p></p>
+    {{ next_button }}
+
+{{ endblock }}
+
+

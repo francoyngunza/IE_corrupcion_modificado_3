@@ -1,0 +1,26 @@
+{{ block title }}
+    Ciudadano Uno
+{{ endblock }}
+
+{{ block content }}
+<p> Estas manejando a mucha velocidad tratando de llegar a tu casa porque te llamaron diciendo que ocurrió una emergencia familiar. Es importante que estes ahí. Sin embargo; un oficial te detiene. </p>
+
+<p> Tienes la opción de ofrecer o no un pago de <b>3 monedas experimentales</b> al oficial.
+    Recuerda que este monto sale de tu dotación inicial (50) &#x2757
+ <ul>
+<li><p> Si decides no ofrecer, te quedas con 50 monedas. </p></li>
+<li><p> Si ofreces y el oficial no acepta, las 3 monedas que ofreciste regresan a ti. </p></li>
+<li><p> Si ofreces y el oficial acepta el pago, recibes <span style="color: red;"><b>18 monedas</b></span>; sin embargo, harías que le resten <span style="color: red;"><b>36 monedas</b></span>  al ciudadano 2.</p></li>
+<li><p> Recuerda que existe un monitor que podrá o no castigarte con el monto que este elija.</p></li>
+ </ul>
+
+<span style="color: red;"><b>Advertencia: En esta ronda el daño que le causas al ciudadano 2 es el doble con respecto a las primeras 5 rondas, pero también tus ganancias pueden duplicarse. </span></b>
+
+<p></p>
+    <p> ¿Qué decides?&#x1F914
+
+    {{ form.Ofrecer_Soborno }}
+    {{ next_button }}
+{{ endblock }}
+
+
